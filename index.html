@@ -17,10 +17,10 @@
     position: absolute;
     top: 35%;
     left: 25%;
-    background-color: #000;
+    background-color: #b95858;
     opacity: 0.75;
     border-radius: 12px;
-    color: #fff;
+    color: #5142b1;
     padding: 3%;
     }
     input {
@@ -42,15 +42,16 @@
         <h1>What is your name?</h1>
         <input type="text" id="name" placeholder="Enter your name" />
         <button onclick="button_click()">Clickme!</button>
+        <button onclick="button_click2()">I hate you!!</button>
     </div>
     
     <script type="text/javascript">
         <!-- Code JavaScript -->
-        function button_click() {
+        function button_click2() {
         let name = document.querySelector('#name').value;
         let result = confirm("I like " + name + ". Do you like me?");
         while(result !== true) {
-        result = confirm("I like " + name + ". Do you like me?");
+        result = confirm("I like " + name + ". You must like me!!!");
         }
         document.body.className = "bg-heart";
         }
